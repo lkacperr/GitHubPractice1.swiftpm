@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var answer = 0
     @State var number1 = 1
     
     @State var number2  = 0
@@ -11,5 +12,6 @@ struct ContentView: View {
         Button("Add") {
             answer = number1 + number2
         }
+        Text("\(answer)")
     }
 }
